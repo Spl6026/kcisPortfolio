@@ -1,5 +1,76 @@
-/* 第 2 週從這裡開始加入自己的樣式。 */
+/* 頁面整體的字體、顏色與行距。 */
 body {
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #333333;
   font-family: Arial, "Microsoft JhengHei", sans-serif;
-  line-height: 1.6;
+  line-height: 1.8;
+}
+
+/* 限制內容寬度，左右自動留白，窄螢幕仍有內距。 */
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1, h2, h3 {
+  line-height: 1.4;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+a {
+  color: #2459a6;
+}
+
+/* 每個主題之間的距離。 */
+section {
+  margin-bottom: 32px;
+}
+
+footer {
+  border-top: 1px solid #dddddd;
+}
+
+/* 用底線區分各主題。 */
+h2 {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #2459a6;
+}
+
+/* 各個能力與成績區塊依序排列，窄螢幕會自動換行。 */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.skill {
+  flex: 1 1 220px;
+  border-left: 2px solid #dddddd;
+  padding-left: 16px;
+}
+
+/* 每筆學歷用左側線條與間距區分。 */
+.education-item {
+  border-left: 2px solid #dddddd;
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+
+.education-item h3 {
+  margin: 0 0 4px;
+}
+
+.education-item p {
+  margin: 4px 0;
+}
+
+.education-date {
+  color: #666666;
+  font-size: 14px;
 }
